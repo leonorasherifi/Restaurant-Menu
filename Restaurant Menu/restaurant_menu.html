@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./23.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h2 {
+  display: inline-block;
+  border-bottom: 4px solid var(--wesbos);
+  margin-top: 0;
+  font: 50px cookie, cursive;
+}
+:root {
+  --wesbos: #ffc600;
+}
+.menu {
+  display: none;
+  padding:30px;
+}
+.menu--is-visible {
+  display: grid;
+}
+.item__header {
+  display: flex;
+  align-items: baseline;
+}
+.item__title {
+  font-size: 15px;
+  margin: 0;
+  font-family: revert;
+}
+.item__dots {
+  flex: 1;
+  border-bottom: 1px dashed #aaa;
+  margin: 0 15px;
+}
+.item__description {
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+.extras {
+  font-size: 14px;
+  font-family: -webkit-pictograph;
+}
+.drinks {
+  margin: 0;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.drinks_price {
+  font: 10px cookie, cursive;
+  color: white;
+  margin-bottom: 0;
+}
+.drinks_type {
+  font-size: 15px;
+  color: #f9dc77e3;
+  font-family: revert;
+}
+.button {
+  margin: 5px 5px;
+  padding: 5px 9px;
+  border: 1px solid var(--wesbos);
+  border-radius: 3px;
+  font-size: 10px;
+  color: white;
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.button--is-active {
+  background-color:#ffc600;
+}
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+</style>
+
+<body>
+    
+    <div class="wrapper">
+
+     <img src="./123.png"  class="imgstyle" style="width: 100%;height: 100%;">
+        <div class="buttons-container">
+          <a href="#" class="button button--is-active" data-target="Burger">BURGER</a>
+          <a href="#" class="button" data-target="Salate">SALATE</a>
+          <a href="#" class="button" data-target="Snack">SNACK</a>
+          <a href="#" class="button" data-target="Sweets">SWEETS</a>
+          <a href="#" class="button" data-target="Drinks">DRINKS</a>
+        </div>
+
+        <!-- Start Menu-1 -->
+        <div class="menu menu--is-visible" id="Burger">
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">HAMBURGER </h3>
+              </div>
+              <p class="item__description">Der Klassiker mit purem Rindfleisch </br> Menu CHF 19 / SINGLE CHF 12 </p>
+            </div>
+
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">CHEESEBURGER </h3>
+              </div>
+              <p class="item__description">Der Klassiker mit Cheddarkäse</br>Menu CHF 19 / SINGLE CHF 12 </p>
+            </div>
+
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">DOUBLEBURGER </h3>
+              </div>
+              <p class="item__description">Doppelter Genuss von Rindfleisch und Cheddarkäse</br>Menu CHF 22 / SINGLE CHF 13 </p>
+            </div>
+
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">RACLETTEBURGER </h3>
+              </div>
+              <p class="item__description">Pures Rindfleisch mit Schweizer Raclettekäse</br>Menu CHF 22 / SINGLE CHF 13 </p>
+            </div>
+
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">FARMERBURGER </h3>
+              </div>
+              <p class="item__description">Rindfleisch mit Schweins- oder Kalbsspeck, Spiegelei & Schweizer Raclettekäse</br>MENU CHF 22 / SINGLE CHF 13 </p>
+            </div>
+
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">CRISPYCHICKENBURGER </h3>
+              </div>
+              <p class="item__description">Knusprig panierte Pouletbrust mit Cheddarkäse </br>Menu CHF 22 / SINGLE CHF 13 </p>
+            </div>
+
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">BEEFOLLO BURGER  </h3>
+              </div>
+              <p class="item__description">Beef trifft auf Crispychicken patty </br>Menu CHF 25 / SINGLE CHF 16 </p>
+            </div>
+
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">ANGUS BEEF BURGER </h3>
+              </div>
+              <p class="item__description">King of beef! Saftiges Angus Rindfleisch als Burger! Nur auf Vorbestellung</br>MENU CHF 50 </p>
+            </div>
+
+            <div class="item">
+              <div class="item__header">
+                <h3 class="item__title">PEA-VEGIBURGER </h3>
+              </div>
+              <p class="item__description">Pilz & Ei mit Avocado</br>MENU CHF 20 / SINGLE CHF 12 </p>
+            </div>
+
+            <div class="item" style="margin-bottom: 30px;">
+              <div class="item__header">
+                <h3 class="item__title">FAL-VEGI BURGER  </h3>
+              </div>
+              <p class="item__description">Vegetarischer Burger mit Falafel & Hummus</br> Menu CHF 20 / SINGLE CHF 12 </p>
+            </div>
+
+            <!-- EXTRA -->
+            <div class="Extra">
+              <h3 class="item__title" style="color: #f9dc77e3;">EXTRA`S</h3>
+              <p style="margin-bottom: 13px; font-size: 13px;">alle Extras können zu jedem Gericht bestellt werden</p>
+
+                <div class="item">
+                  <h6 class="extras">Beefpatty 6.-</h6>
+                </div>
+
+                <div class="item">
+                  <h6 class="extras">Cheddar Käsesauce 3.-</h6>
+                </div>
+
+                <div class="item">
+                  <h6 class="extras">Cheddar Scheiben 2.-</h6>
+                </div>
+
+                <div class="item">
+                  <h6 class="extras">Crispy Chicken Patty 6.-</h6>
+                </div>
+
+                <div class="item">
+                  <h6 class="extras">Ei 2.-</h6>
+                </div>
+
+                <div class="item">
+                  <h6 class="extras">Jalapênos 3.-</h6>
+                </div>
+
+                <div class="item">
+                  <h6 class="extras">Raclettekäse 3.-</h6>
+                </div>
+
+                <div class="item">
+                  <h6 class="extras">Speckstreifen für Burger 3.-</h6>
+                </div>
+
+                <div class="item">
+                  <h6 class="extras">Speckwürffel für Pommes 3.-</h6>
+                </div>
+
+            </div>
+        </div> 
+        <!-- End Menu-1 -->
+
+
+        <!-- Start Menu-2 -->
+        <div class="menu" id="Salate">
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">CESAR SALAT AN CESAR-DRESSING : </h3>
+            </div>
+            <p class="item__description">Grillierte Poulet streifen, Lattich, Cherry Tomaten, Parmesan, Croutons & rote Zwiebeln  </br> CHF 17 </p>
+          </div>
+
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">CRISPY CHICKEN SALAT  </h3>
+            </div>
+            <p class="item__description">Knusprig paniertes Pouletbrust an pikantem Dressing auf Eisbergsalat, Cherrytomaten, Kabis, Peperoni & rote Zwiebeln </br> CHF 17 </p>
+          </div>
+
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">CALESLAW SALAT ASLLANI’S ART </h3>
+            </div>
+            <p class="item__description">Rucola mit Rüebli, Kabis, Cherrytomaten Öl & Balasamico, garniert mit Granatapfel. </br> CHF 17 </p>
+          </div>
+        </div>
+        <!-- End Menu-2 -->
+      
+
+        <!-- Start Menu-3 --><div>
+        <div class="menu"  id="Snack">
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">CRISPY CHICKEN NUGGETS </h3>
+            </div>
+            <p class="item__description">Frisch à la Asllani’s panierte Crispy Chickennuggets </br> CHF 10 </p>
+          </div>
+
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">POMMES FRITES </h3>
+            </div>
+            <p class="item__description">Knackige & hausgemachte Pommes frites </br> CHF 8 </p>
+          </div>
+
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">SWEET POTATOES FRIES </h3>
+            </div>
+            <p class="item__description">Auch knackig & sowie hausgemacht, einfach aus Süsskartoffeln. </br> CHF 9 </p>
+          </div>
+
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">COUNTRY FRIES </h3>
+            </div>
+            <p class="item__description">Marinierte Kartoffelspalten </br> CHF 8 </p>
+          </div>
+          <div class="item">
+            <div class="item__header">
+              <h3 class="item__title">CHEESY POMMES </h3>
+            </div>
+            <p class="item__description">Hausgemachte Pommes frites mit Asllani’s Käsesauce </br> CHF 11 </p>
+          </div>     
+        </div> 
+        <!-- End Menu-3 -->
+      
+
+        <!-- Start Menu-4 -->
+        <div class="menu" id="Sweets">
+          <div class="item">
+            <div class="item__header"> <h3 class="item__title" style="margin-bottom: 25px;">New Yorker Cheesecake 10 </h3> </div>
+          </div>
+
+          <div class="item">
+            <div class="item__header"> <h3 class="item__title">Asllani's Ice Coffee 10 </h3> </div>
+          </div>
+        </div>
+        <!-- End Menu-4 -->
+
+
+        <!-- Start Menu-5 -->
+        <div class="menu" id="Drinks">
+          <div class="SOFTGETRÄNKE">
+            <h3 class="drinks_type">SOFTGETRÄNKE</h3>
+              <div class="item__header">
+                <h3 class="drinks">Mineral Valser ohne</h3><span class="item__dots"></span><pre class="drinks_price">3.3 dl/ 5dl    4.5/5.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Mineral Valser mit</h3><span class="item__dots"></span><pre class="drinks_price">3.3 dl/ 5dl    4.5/5.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Coca Cola</h3><span class="item__dots"></span><pre class="drinks_price">3.3 dl           4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Coca Cola Zero</h3><span class="item__dots"></span><pre class="drinks_price">3.3 dl           4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Fanta</h3><span class="item__dots"></span><pre class="drinks_price">3.3 dl           4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Sprite</h3><span class="item__dots"></span><pre class="drinks_price">3.3 dl           4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Bittel Lemon</h3><span class="item__dots"></span><pre class="drinks_price">2.0 dl           4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Rivella Rot</h3><span class="item__dots"></span><pre class="drinks_price">3.3 dl           4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Ice Tea Lemon/Peach</h3><span class="item__dots"></span><pre class="drinks_price">3.3 dl        4.5/6</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Red Bull</h3><span class="item__dots"></span><pre class="drinks_price">2.5 dl              5</pre>
+              </div>
+          </div></br>
+
+          <div class="HEISSGETRÄNKE">
+            <h3 class="drinks_type">HEISSGETRÄNKE</h3>
+              <div class="item__header">
+                <h3 class="drinks">Kaffee créme</h3><span class="item__dots"></span><pre class="drinks_price">4.2</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Espresso</h3><span class="item__dots"></span><pre class="drinks_price">4.2</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Cappuccino</h3><span class="item__dots"></span><pre class="drinks_price">4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Latte Machhiato</h3><span class="item__dots"></span><pre class="drinks_price">4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Schokolade Heiss / Kalt</h3><span class="item__dots"></span><pre class="drinks_price">4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Ovomaltine Heiss / Kalt</h3><span class="item__dots"></span><pre class="drinks_price">4.5</pre>
+              </div>
+              <div class="item">
+                <div class="item__header">
+                  <h3 class="drinks">Tea</h3><span class="item__dots"></span><pre class="drinks_price">4.2</pre>
+                </div>
+                <p style="font-size: 12px; margin: 0px;">Pfefferminz, Grüntee, Frucht, Schwarz, Kamille </p>
+              </div>
+          </div></br>
+
+          <div class="BIER">
+            <h3 class="drinks_type">BIER</h3>
+              <div class="item__header">
+                <h3 class="drinks">Rugenbräu</h3><span class="item__dots"></span><pre class="drinks_price">3 dl     4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Rugenbräu Panaché</h3><span class="item__dots"></span><pre class="drinks_price">3 dl     4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Corona</h3><span class="item__dots"></span><pre class="drinks_price">3 dl     4.5</pre>
+              </div>
+              <div class="item__header">
+                <h3 class="drinks">Sagres</h3><span class="item__dots"></span><pre class="drinks_price">3 dl     4.5</pre>
+              </div>
+          </div>
+        </div>
+        <!-- End Menu-5 
+        <div class="row m-0 p-0">
+            <img src="./fb.png"style="width:28%" class="mx-auto">
+        </div>-->
+    </div>
+
+</body>
+<script>
+const buttons = document.querySelectorAll('.button');
+const menus = document.querySelectorAll('.menu');
+
+function initialHightlightLocation() {
+  const activeButton = document.querySelector('.button--is-active');
+}
+
+function handleClick(e) {
+  e.preventDefault();
+
+  buttons.forEach(button => button.classList.remove('button--is-active'));
+  this.classList.add('button--is-active');
+
+  const targetMenu = document.querySelector(`#${this.dataset.target}`);
+  menus.forEach(menu => {
+    menu.classList.remove('menu--is-visible');
+    targetMenu.classList.add('menu--is-visible');
+  })
+}
+
+window.addEventListener('load', initialHightlightLocation);
+window.addEventListener('resize', initialHightlightLocation);
+buttons.forEach(button => button.addEventListener('click', handleClick));
+
+</script>
+</html>
